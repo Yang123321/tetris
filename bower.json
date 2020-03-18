@@ -1,0 +1,30 @@
+{
+  "name": "my-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^4.1.1",
+    "purescript-console": "^4.4.0",
+    "purescript-effect": "^2.0.1",
+    "purescript-math": "^2.1.1",
+    "purescript-maybe": "^4.0.1",
+    "purescript-arrays": "^5.3.1",
+    "purescript-tuples": "^5.1.0",
+    "purescript-foldable-traversable": "^4.1.1",
+    "purescript-canvas": "^4.0.0",
+    "purescript-integers": "^4.0.0",
+    "purescript-js-timers": "^4.0.1",
+    "purescript-refs": "^4.1.0",
+    "purescript-thermite": "^6.3.0",
+    "purescript-react": "^8.0.0",
+    "purescript-react-dom": "^6.1.0",
+    "purescript-thermite-dom": "^0.3.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^4.0.0"
+  }
+}

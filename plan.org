@@ -1,0 +1,23 @@
+* Tetris
+** Types
+*** Board 
+    type Board = Array (Array Boolean)
+    [ [false,false,......],
+      [false,false,......],
+      [false,false,......],
+      [false,false,......] ]
+     false 代表未使用
+     true  代表已使用
+*** Square
+    type Square = Array (Array Boolean)
+    [[true,true,true,true],
+     [false,false,false,false].
+     [false,false,false,false].
+     [false,false,false,false]]
+*** MoveSquare
+    type MoveSquare =
+    { row :: Int
+    , clow :: Int
+    , square :: Square
+    }
+
