@@ -15,10 +15,8 @@ import Data.Int (toNumber)
 import Effect.Timer (setInterval)
 import Effect.Ref
 import Gui
--- import Prim.Partial
 
 
--- boardWidth, boardHeight :: Int
 boardWidth = 12  :: Int  -- only 10 can use    x0000x  -->  clow
 boardHeight = 21 :: Int  -- only 20 can user   x0000x  -->  row
                          --                    xxxxxx
@@ -45,13 +43,6 @@ initBoard' :: Int -> Int -> Board
 initBoard' rows clows = do
   i <- 1 .. rows
   [replicate clows false]
--- 这里的语法不是do的list monad语义，应该就是语法糖，不是monad语义！！！！！
--- 在haskell中的list语义会使用concat函数
--- t = do
---   i <- [1]
---   j <- [1..30]
---   retrun True
--- 结果：[True,True,True,True,True,True,True]
 
 initBoard :: Maybe Board
 initBoard =  foldM (updateBoardAt true) baseBoard (changeListA <> changeListB)
